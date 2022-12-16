@@ -141,7 +141,7 @@ main {
 
 .bottom-decoration {
   position: absolute;
-  bottom: calc(100rem / 16);
+  bottom: calc(40rem / 16);
   right: calc(-400rem / 16);
   max-width: calc(622rem / 16);
 }
@@ -206,14 +206,14 @@ main {
   }
 
   .top-decoration {
-    top: calc(-200rem / 16);
+    top: calc(-400rem / 16);
     left: -20%;
     max-width: 100%;
     opacity: 1;
   }
 
   .bottom-decoration {
-    bottom: calc(-300rem / 16);
+    bottom: calc(-600rem / 16);
     right: calc(-200rem / 16);
     max-width: 100%;
     opacity: 1;
