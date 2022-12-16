@@ -1,0 +1,221 @@
+:root {
+  /* primary */
+  --darkCyan: hsl(185, 75%, 39%);
+  --desaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+
+  /* neutrals */
+  --darkGray: hsl(0, 0%, 59%);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: hsl(185, 75%, 39%);
+}
+
+h1 {
+  font-size: calc(18rem / 16);
+}
+
+span {
+  font-size: calc(18rem / 16);
+}
+
+p {
+  font-size: calc(14rem / 16);
+  color: var(--darkGray);
+  margin-top: 4px;
+}
+
+li {
+  font-size: calc(10rem / 16);
+  color: var(--darkGray);
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(233rem / 16);
+  padding: 0px;
+}
+
+.stats-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: calc(34rem / 16);
+  padding: calc(24rem / 16);
+  border-top: 1px solid #e8e9ec;
+}
+
+.stats {
+  font-size: calc(18rem / 16);
+  letter-spacing: 0px;
+  font-weight: 700;
+  color: black;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-decoration {
+  position: absolute;
+  top: calc(100rem / 16);
+  left: calc(-450rem / 16);
+  max-width: calc(622rem / 16);
+  opacity: 0.2;
+}
+
+.bottom-decoration {
+  position: absolute;
+  bottom: calc(100rem / 16);
+  right: calc(-400rem / 16);
+  max-width: calc(622rem / 16);
+}
+
+.card {
+  max-width: calc(326rem / 16);
+  height: calc(374rem / 16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: calc(15rem / 16);
+  position: relative;
+  margin: 0px calc(20rem / 16);
+}
+
+.profile-wrapper img {
+  border-radius: 50%;
+  outline: 4px solid white;
+  position: relative;
+  margin-top: calc(-50rem / 16);
+  margin-bottom: calc(20rem / 16);
+}
+
+.pattern-wrapper {
+  border-radius: calc(15rem / 16) calc(15rem / 16) 0px 0px;
+  overflow: hidden;
+}
+
+.pattern-wrapper img {
+  height: calc(140rem / 16);
+  object-fit: cover;
+}
+
+.headline {
+  display: flex;
+  gap: calc(8.5rem / 16);
+}
+
+.headline span {
+  color: var(--darkGray);
+  font-weight: 400;
+}
+
+.headline-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attribution {
+  color: white;
+}
+
+.attribution a {
+  color: hsl(229, 23%, 23%);
+}
+
+@media (min-width: 600px) {
+  .card {
+    max-width: calc(350rem / 16);
+  }
+
+  .top-decoration {
+    top: calc(-200rem / 16);
+    left: -20%;
+    max-width: 100%;
+    opacity: 1;
+  }
+
+  .bottom-decoration {
+    bottom: calc(-300rem / 16);
+    right: calc(-200rem / 16);
+    max-width: 100%;
+    opacity: 1;
+  }
+}
